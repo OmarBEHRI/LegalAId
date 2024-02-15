@@ -1,0 +1,65 @@
+@font-face {
+    font-family: 'Roboto';
+    src: url('https://fonts.googleapis.com/css2?family=Roboto&display=swap'); /* Link to the Roboto font hosted on Google Fonts */
+}
+
+@font-face {
+    font-family: 'Soehne';
+    src: url('path/to/soehne-regular.woff2') format('woff2'), /* Path to the WOFF2 font file */
+         url('path/to/soehne-regular.woff') format('woff'); /* Path to the WOFF font file */
+    font-weight: normal;
+    font-style: normal;
+  }
+
+body, html{
+    margin: 0;
+    padding: 0;
+    font-family: 'Soehne', sans-serif;
+}
+
+header{
+    position: sticky;
+    top:0;
+    left: 0;
+    width:100vw;
+    height: 10vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#logo{
+    margin-left: 2%;
+    font-size: 1.8rem;
+    font-family: 'Soehne', sans-serif;
+    padding-top: 1.5rem;
+    line-height: 80%;
+}
+.First-Letter{
+    font-size: 2rem;
+    font-weight: bold;
+    letter-spacing: 1.1px;
+}
+
+.nav-list{
+    display: flex;
+    width: 40%;
+    justify-content: space-around;
+    align-items: center;
+
+}
+.nav-links{
+    list-style: none;
+}
+
+.link{
+    text-decoration: none;
+    color: black;
+    font-weight: normal;
+    font-size: 1.30rem;
+}
+
+
+#Slogan{
+    font-size: 1.25rem;
+}
