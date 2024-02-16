@@ -1,0 +1,46 @@
+:root{
+    --color1: #1D2B1D;
+    --color2: #faef5d;
+}
+
+html, body{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color: var(--color1);
+
+}
+
+header{
+    position: sticky;
+    top:0;
+    left: 0;
+    width:100vw;
+    height: 10vh;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+#logo{
+    margin-left: 2%;
+    font-size: 1.9rem;
+    font-family: 'Montserrat', sans-serif;
+    padding-top: 1.7rem;
+    line-height: 80%;
+    font-weight: 500;
+    color: white;
+}
+.First-Letter{
+    font-size: 2rem;
+    font-weight: 500;
+    letter-spacing: 1.1px;
+}
+
+#Slogan{
+    font-size: 1rem;
+    font-weight: 300;
+}
+
