@@ -6,11 +6,12 @@
 html, body{
     margin: 0;
     padding: 0;
+    font-family: 'Montserrat', sans-serif;
 }
 
 body{
     background-color: var(--color1);
-
+    overflow-y: hidden;
 }
 
 header{
@@ -27,7 +28,6 @@ header{
 #logo{
     margin-left: 2%;
     font-size: 1.9rem;
-    font-family: 'Montserrat', sans-serif;
     padding-top: 1.7rem;
     line-height: 80%;
     font-weight: 500;
@@ -44,3 +44,118 @@ header{
     font-weight: 300;
 }
 
+#main-section{
+    width: 100vw;
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 1fr 3px 3fr;
+    grid-template-rows: 1fr;
+    justify-items: center;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+}
+
+.history{
+    width: 100%;
+    height: 100%;
+    grid-column: 1/2;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#history-tittle{
+    margin-top: 15%;
+    font-size: 1.4rem;
+    color: white;
+    font-weight: 600;
+}
+
+.history-container{
+    width:  100%;
+    height: 100%;
+}
+
+.line{
+    margin-top: -10%;
+    width: 0;
+    height: 75vh;
+    border-left: 2px rgba(232, 232, 232, 0.452) solid;
+    grid-column: 2/3;
+}
+
+.chat-area{
+    margin-top: -8%;
+    height: 90%;
+    width: 90%;
+    max-width: 90%;
+    max-height: 90%;
+    border-radius: 20px;
+    background-color: rgba(0, 0, 0, 0.275);
+    grid-column: 3/4;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.input-container{
+    position: relative;
+    height: 10%;
+    width: 90%;
+}
+
+.chat-input{
+    margin-top: -3vh;
+    padding-left: 10px;
+    height: 100%;
+    width: 100%;
+    border: none;
+    border-radius: 10px;
+    background-color: #314D30;
+    font-size: 1.1rem;
+    font-family: 'Montserrat', sans-serif;
+    color: rgba(255, 255, 255, 0.749);
+    font-weight: 500;
+}
+
+.chat-input:focus{
+    outline: none;
+}
+
+.chat-input::placeholder{
+    padding-left: 10px;
+}
+
+.chat-input:focus::placeholder{
+    color:transparent;
+}
+
+#input-button-img{
+    position: absolute;
+    top: -15%;
+    right: 2%;
+    width: 4%;
+    height: 65%;
+    cursor: pointer;
+}
+
+.chat-content{
+    width: 90%;
+    height: 80vh;
+    max-width: 90%;
+    max-height: 80vw;
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: flex-start;
+    align-items: flex-start;
+    overflow-y: auto;
+}
+
+.message{
+    color: white;
+    font-weight: 1.1rem;
+    font-weight: 500;
+}
