@@ -103,22 +103,27 @@ header{
 
 .input-container{
     position: relative;
-    height: 10%;
+    height: 8%;
     width: 90%;
 }
 
 .chat-input{
+    box-sizing: border-box;
     margin-top: -3vh;
     padding-left: 10px;
+    padding-right: 20%;
+    padding-top: 1.2rem;
     height: 100%;
     width: 100%;
     border: none;
     border-radius: 10px;
     background-color: #314D30;
-    font-size: 1.1rem;
+    font-size: 1.3rem;
     font-family: 'Montserrat', sans-serif;
     color: rgba(255, 255, 255, 0.749);
     font-weight: 500;
+    vertical-align: middle;
+    resize: NONE;
 }
 
 .chat-input:focus{
@@ -152,9 +157,37 @@ header{
     justify-content: flex-start;
     align-items: flex-start;
     overflow-y: auto;
+    row-gap: 3rem;
+}
+
+.message-box{
+    width: 100%;
+    height: fit-content;
+    display: grid;
+    grid-template-columns: 4rem 1fr;
+    margin: 1rem 0;
+}
+
+.icon-container{
+    width: 2.5rem;
+    height: 2.5rem;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    justify-items: center;
+    align-content: center;
+    overflow: hidden;
+}
+
+.img-icon{
+    width: 3.5rem;
+    height: 3.5rem;
 }
 
 .message{
+    width: 30rem;
+    word-wrap: break-word;
     color: white;
     font-weight: 1.1rem;
     font-weight: 500;
